@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+.container-top {
+  width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+}
+.content-right {
+  display: flex;
+  flex-direction: column;
+}
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.card-header .profile-name {
+  font-weight: 500;
+  color: hsl(300, 24%, 96%);
+}
+.card-header .profile-verified {
+  color: hsl(333, 80%, 67%);
+  padding-top: 5px;
+}
+.grid-col-1 {
+  grid-row: 2/3;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  grid-column-gap: 30px;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.card-profile {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+article {
+  font-size: 1rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 400;
+}
+.card-content blockquote {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  line-height: 1;
+  padding-top: 20px;
+}
+.grid-col1 {
+  margin-bottom: 10px;
+}
