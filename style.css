@@ -7,22 +7,22 @@
 body {
   font-family: "League Spartan", sans-serif;
 }
-.container-top {
-  width: 1000px;
+.container {
+  max-width: 70%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20%;
+  gap: 10%;
 }
 .grid-col-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 40% 50% auto;
   grid-template-rows: 1fr;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-around;
 }
 .content-left {
   display: flex;
@@ -31,6 +31,7 @@ body {
 .content-right {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 .grid-col-4 {
   display: grid;
@@ -81,6 +82,10 @@ article {
   font-size: 1rem;
   color: hsl(303, 10%, 53%);
   font-weight: 400;
+  padding-top: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .card-content blockquote {
   color: hsl(0, 0%, 100%);
@@ -88,6 +93,11 @@ article {
   line-height: 1;
   padding-top: 20px;
 }
-.grid-col1 {
+.content-right span {
+  width: 30%;
+  background-color: hsl(300, 24%, 96%);
   margin-bottom: 10px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  padding: 10px;
 }
